@@ -18,7 +18,7 @@ pipeline:
     commands:
       - bazel test //...
 
-   bazel:
-     image: l.gcr.io/google/bazel
-     commands:
-       - bazel build //...
+  bazel:
+    image: l.gcr.io/google/bazel
+    commands:
+      - bazel build //...
