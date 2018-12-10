@@ -13,7 +13,13 @@ pipeline:
     commands:
       - go build
       
-  bazel:
+  bazel-test:
     image: l.gcr.io/google/bazel
     commands:
-      - bazel build //...
+      - bazel test //...
+      
+   bazel:
+     image: l.gcr.io/google/bazel
+     commands:
+       - bazel build //...
+   
