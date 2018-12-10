@@ -13,7 +13,7 @@ pipeline:
     commands:
       - go build
       
-  bazel-gazelle:
+  bazel:
     image: l.gcr.io/google/bazel
     commands:
-      - bazel run //:go_default_library
+      - bazel run :go_default_library
