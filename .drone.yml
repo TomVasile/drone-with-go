@@ -16,4 +16,4 @@ pipeline:
   bazel-gazelle:
     image: l.gcr.io/google/bazel
     commands:
-      - bazel run //:gazelle
+      - bazel run //:go_default_library
