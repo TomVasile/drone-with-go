@@ -16,4 +16,4 @@ pipeline:
   bazel:
     image: l.gcr.io/google/bazel
     commands:
-      - bazel run :go_default_library
+      - bazel build //
