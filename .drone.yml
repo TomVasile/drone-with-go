@@ -12,7 +12,7 @@ pipeline:
     image: golang:latest
     commands:
       - go build
-      
+
   bazel-test:
     image: l.gcr.io/google/bazel
     commands:
